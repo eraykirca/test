@@ -15,6 +15,13 @@ dependencies:
   - cpuonly
   - pip
   - pip:
+      # make sure pip doesn’t fetch GPU builds
+      - --index-url https://download.pytorch.org/whl/cpu
+      - --extra-index-url https://pypi.org/simple
+      # keep torch/vision pinned to the same versions as conda
+      - torch==2.4.1
+      - torchvision==0.19.1
+      # your other deps
       - streamlit==1.50.0
       - transformers==4.40.2
       - accelerate==1.10.1
@@ -24,3 +31,5 @@ dependencies:
       - ftfy==6.3.1
       - wordfreq==3.1.1
       - pyarrow==21.0.0
+
+
