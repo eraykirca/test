@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Title
-st.title("tttttttttttttttttttttttttttt")
+st.title("tttttttttt")
 
 # Input from user
 name = st.text_input("Enter your name:")
@@ -10,3 +10,4 @@ name = st.text_input("Enter your name:")
 if st.button("Say Hello"):
 
     st.write(f"Hello, {name} 👋 Welcome to Streamlit!")
+
